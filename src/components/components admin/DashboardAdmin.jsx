@@ -126,42 +126,7 @@ function DashboardAdmin() {
     }
   }
 
-  /* Metodo patch con sweetalert */
-  /* async function botonEditarProducto(producto) {
-  const { value: datos } = await Swal.fire({
-    title: "Editar producto",
-    html: `
-      <input id="swal-nombre" class="swal2-input" placeholder="Nombre" value="${producto.producto}">
-      <input id="swal-categoria" class="swal2-input" placeholder="Categoría" value="${producto.categoria}">
-      <input id="swal-precio" type="number" class="swal2-input" placeholder="Precio" value="${producto.precio}">
-    `,
-    focusConfirm: false,
-    showCancelButton: true,
-    preConfirm: () => {
-      return {
-        producto: document.getElementById("swal-nombre").value,
-        categoria: document.getElementById("swal-categoria").value,
-        precio: document.getElementById("swal-precio").value
-      };
-    }
-  });
-
-  if (datos) {
-    
-    await ServicesProducto.updateProductos(producto.id, datos);
-
-    
-    const informacionProductos = await ServicesProducto.getProductos();
-    setProductos(informacionProductos);
-
-    Swal.fire({
-      title: "¡Actualizado!",
-      text: "El producto ha sido modificado correctamente",
-      icon: "success",
-      confirmButtonText: "Aceptar"
-    });
-  }
-} */
+  
   /*  METODO PATCH CON Drawer lateral(panel deslizante) */
   function abrirDrawer(producto) { /* se abre tras tocar el boton editar y cambia el panel a verdadero */
     setProductoEditando(producto) /* primero copia el valor completo del producto */
@@ -283,9 +248,7 @@ function DashboardAdmin() {
                 <td>
                   <div className="botonesModificar">
                     <button className="botonEditarProducto" onClick={() => abrirDrawer(producto)}>Editar</button>
-                    {/* <button onClick={() => navigate(`/editar/${producto.id}`)} className="botonEditarProducto" >Modificar</button>
-                    <button onClick={() => botonEditarProducto(producto)} className="botonEditarproducto">Editar producto</button>
-                    <button onClick={() => botonEditarProducto(producto)}>Editar</button> */}
+                    
                     <button onClick={() => botonEliminarProducto(producto.id)} className="botonEliminarProducto" >Eliminar</button>
                   </div>
                 </td>
