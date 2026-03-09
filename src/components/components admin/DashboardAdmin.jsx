@@ -198,7 +198,7 @@ function DashboardAdmin() {
   return (
     <main id='dashboaradmin'>
       <div id='dashboaradmin-registroProductos'>
-        <label htmlFor="nombreProducto">Nombre producto</label>
+        <label htmlFor="nombreProducto">Nombre del producto:</label>
         <input type="text" name="nombreProducto" id="nombreProducto" value={nombreProducto} onChange={(evento) => setNombreProducto(evento.target.value)} />
         <br />
         <label htmlFor="categoriaProductos">Categoria del producto</label>
