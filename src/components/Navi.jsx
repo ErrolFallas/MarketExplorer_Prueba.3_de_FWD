@@ -23,7 +23,7 @@ function Navi() {
             contenidoNav = (
                 <>
                     <Link to="/" id='nav-home'>Home</Link>
-                    <Link to={"/PerfilUsuario"} id='nav-perfilUsuario'>Perfila Admin</Link>
+                    <Link to={"/PerfilUsuario"} id='nav-perfilUsuario'>Perfil Admin</Link>
                     {/* <Link to="/Formulario">Contact</Link> */}
                     <Link to={"/PanelAdministrador"} id='nav-panelAdmin'>Panel Admin</Link>
                     {/* <Link to="/Formulario">Contact</Link> */}
