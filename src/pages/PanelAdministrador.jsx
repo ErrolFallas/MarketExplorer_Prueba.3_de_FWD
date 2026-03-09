@@ -1,5 +1,5 @@
 import React from 'react'
-import DashboardAdmin from '../components/components admin/DashboardAdmin.jsx'
+import DashboardAdmin from '../components/components_admin/DashboardAdmin.jsx'
 import Navi from '../components/Navi.jsx'
 
 function PanelAdministrador() {

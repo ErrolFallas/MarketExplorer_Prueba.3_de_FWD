@@ -1,5 +1,5 @@
 import React from 'react'
-import EditarUsuario from '../components/components usuario/EditarUsuario.jsx'
+import EditarUsuario from '../components/components_usuario/EditarUsuario.jsx'
 import Navi from '../components/Navi.jsx'
 function EdicionInfoUsuario() {
   return (

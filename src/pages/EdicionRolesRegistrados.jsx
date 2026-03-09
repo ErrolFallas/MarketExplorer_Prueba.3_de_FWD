@@ -1,6 +1,6 @@
 import React from 'react'
 import Navi from '../components/Navi.jsx'
-import EditarRolesAdmin from '../components/components admin/EditarRolesAdmin.jsx'
+import EditarRolesAdmin from '../components/components_admin/EditarRolesAdmin.jsx'
 function EdicionRolesRegistrados() {
   return (
     <div>
